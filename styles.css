@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "NotoSerifBengali";
+  src: url("./NotoSerifBengali-Regular.woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: "NotoSerifBengali", Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+
+  .controller {
+    width: 100%;
+    max-width: 1000px;
+    padding: 10px 7.5%;
+    display: flex;
+
+    .word-pronounce {
+      width: auto;
+      height: 30px;
+      margin-right: auto;
+
+      display: flex;
+      align-items: center;
+
+      input {
+        width: 20vw;
+        min-width: 150px;
+        max-width: 225px;
+        height: 30px;
+        padding: 5px 2.5%;
+        font-size: 18px;
+        line-height: 18px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        border: 1px solid rgb(23, 23, 231);
+        background-color: rgb(240, 240, 240);
+        border-right: none;
+      }
+
+      button {
+        width: 10vw;
+        min-width: 95px;
+        max-width: 100px;
+        padding: 5px 7px;
+        font-size: 16px;
+        line-height: 18px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border: 1px solid rgb(23, 23, 231);
+        background-color: rgb(55, 55, 248);
+        color: white;
+        cursor: pointer;
+      }
+    }
+
+    .mouse-action {
+      width: auto;
+      height: 30px;
+      margin-left: auto;
+      padding: 5px 10px;
+      font-size: 20px;
+      border-radius: 3px;
+      border: 1px solid rgb(23, 23, 231);
+      background-color: rgb(240, 240, 240);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .actions {
+        margin-left: -10px;
+        padding: 5px 7px;
+        font-size: 16px;
+        line-height: 18px;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+        border-right: 1px solid rgb(23, 23, 231);
+        background-color: rgb(55, 55, 248);
+        color: white;
+      }
+
+      input[type="checkbox"] {
+        margin-left: 10px;
+        margin-right: 5px;
+        transition: 0.3s;
+        cursor: pointer;
+        accent-color: rgb(23, 23, 231);
+
+        &:hover {
+          transform: scale(1.25);
+        }
+      }
+
+      label {
+        font-size: 16px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  #alphabets {
+    width: 100%;
+    max-width: 1000px;
+    padding: 10px 5%;
+    display: block;
+
+    section {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .row {
+        margin: 0.5% 0;
+        display: flex;
+        flex-flow: wrap;
+        gap: 0.5%;
+
+        .letter {
+          width: 12%;
+          min-width: 70px;
+          padding: 5px;
+          font-size: 40px;
+          line-height: 50px;
+          border-radius: 5px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.3s;
+
+          &:hover {
+            transform: scale(1.25);
+            background-color: rgb(240, 240, 240);
+            text-shadow: 0 0 25px rgb(72, 201, 21);
+            color: rgb(23, 23, 231);
+          }
+        }
+      }
+    }
+  }
+}
