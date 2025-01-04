@@ -5,6 +5,7 @@ async function fetchData(path, cb) {
     const splited = txt.split(/\r\n\r\n/);
     splited.forEach((item) => {
       const section = item.trim().split(/\r\n/);
+      console.log(section)
       // regexp[section[0]] = new RegExp(section[1].replace(/\//g, ""));
       cb(section);
     });
