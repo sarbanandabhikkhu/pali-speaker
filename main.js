@@ -1,4 +1,4 @@
-import fetchData from "../utils/fetchData.js";
+import fetchData from "./utils/fetchData.js";
 import pronounceLetters from "./lib/pronounceLetters.js";
 import prononuceWords from "./lib/pronounceWords.js";
 
