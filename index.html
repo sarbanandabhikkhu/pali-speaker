@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pali Speaker</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>পাল়ি উচ্চারণ</h1>
+    <span id="time_span"></span>
+    <div class="controller">
+      <div class="word-pronounce">
+        <input
+          type="text"
+          name="write_word"
+          id="write_word"
+          value="ভগৰা"
+          placeholder="পাল়ি শব্দ লিখুন"
+        />
+        <button id="word_pronounce">উচ্চারণ করুন</button>
+        <audio id="track"></audio>
+      </div>
+      <div class="mouse-action">
+        <div class="actions">সেটিংস</div>
+        <input type="checkbox" name="_click" id="_click" checked />
+        <label for="_click">ক্লিক</label>
+        <input type="checkbox" name="_hover" id="_hover" />
+        <label for="_hover">হোভার</label>
+      </div>
+    </div>
+    <div id="alphabets">
+      <audio id="pronouce"></audio>
+    </div>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
